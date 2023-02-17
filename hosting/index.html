@@ -1,89 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!--
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/hosting/stylesheets/reset.css">
+  <link rel="stylesheet" href="/hosting/stylesheets/custommain.min.css">
+  <link rel="stylesheet" href="/hosting/stylesheets/main.css">
+  <script defer src="myscripts.js"></script>
+  <title>Gauthier Studio</title>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+  <nav class="navbar navbar-expand-lg tight-wrapper">
+    <div class="container-fluid flex-nowrap">
+      <a class="navbar-brand" href="#"><svg class="w-100" id="Layer_2" data-name="Layer 2"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435.23 43.73">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #49a84e;
+              }
+            </style>
+          </defs>
+          <g id="Layer_1-2" data-name="Layer 1">
+            <g>
+              <path class="cls-1"
+                d="m39.15,19.9v8.94c-1.07,4.91-3.41,8.61-7,11.13-3.6,2.52-7.61,3.77-12.04,3.77-5.57,0-10.31-2.08-14.23-6.25S0,28.29,0,22.4,1.92,11.33,5.75,7.21C9.58,3.07,14.36,1,20.1,1c6.69,0,11.98,2.35,15.88,7.04l-6.15,6.75c-2.2-3.53-5.26-5.29-9.19-5.29-2.91,0-5.39,1.26-7.44,3.77-2.04,2.52-3.06,5.56-3.06,9.13s1.02,6.49,3.06,8.98c2.05,2.47,4.53,3.71,7.44,3.71,2.4,0,4.49-.72,6.27-2.17,1.78-1.46,2.67-3.38,2.67-5.77h-9.48v-7.25h19.04Z" />
+              <path class="cls-1"
+                d="m45.03,39.81c-2.41-2.63-3.6-5.83-3.6-9.63s1.2-7.02,3.6-9.65c2.4-2.64,5.45-3.96,9.15-3.96,3.4,0,6.2,1.07,8.4,3.21v-2.46h8.85v25.65h-8.75v-2.9h-.1c-2.2,2.43-4.99,3.65-8.4,3.65-3.7,0-6.74-1.3-9.15-3.92Zm7.52-13.96c-1.16,1.13-1.73,2.57-1.73,4.33s.55,3.21,1.65,4.33c1.11,1.11,2.56,1.67,4.35,1.67s3.16-.56,4.27-1.69c1.13-1.14,1.69-2.57,1.69-4.31s-.58-3.21-1.73-4.33c-1.16-1.14-2.56-1.71-4.23-1.71s-3.12.57-4.27,1.71Z" />
+              <path class="cls-1"
+                d="m85.76,17.33v12.21c0,2.53.38,4.33,1.15,5.4.76,1.07,2.06,1.6,3.9,1.6s3.13-.53,3.9-1.6c.76-1.07,1.15-2.86,1.15-5.4v-12.21h8.85v14.35c0,4.27-1.11,7.34-3.33,9.23-2.21,1.88-5.73,2.81-10.56,2.81s-8.36-.94-10.58-2.81c-2.21-1.89-3.31-4.96-3.31-9.23v-14.35h8.85Z" />
+              <path class="cls-1"
+                d="m111.69,17.33V7.79h8.85v9.54h5.4v6.75h-5.4v8.15c0,2.38.66,3.56,1.98,3.56.33,0,.68-.07,1.04-.21.38-.14.67-.27.88-.4l.29-.21,2.21,7.15c-1.91,1.07-4.07,1.6-6.5,1.6-1.67,0-3.1-.29-4.31-.88-1.2-.58-2.1-1.36-2.73-2.35-.61-.98-1.05-2.01-1.31-3.08-.27-1.08-.4-2.24-.4-3.48v-9.85h-3.71v-6.75h3.71Z" />
+              <path class="cls-1"
+                d="m129.92,42.98V0h8.85v20.04h.08c2.3-2.3,4.76-3.46,7.35-3.46,1.26,0,2.52.17,3.77.5s2.45.85,3.6,1.56c1.15.7,2.08,1.69,2.79,2.98.72,1.28,1.08,2.77,1.08,4.46v16.9h-8.85v-14.5c0-1.33-.43-2.5-1.27-3.5-.85-1-1.96-1.5-3.33-1.5s-2.54.52-3.63,1.56c-1.07,1.03-1.6,2.18-1.6,3.44v14.5h-8.85Z" />
+              <path class="cls-1"
+                d="m163.79,3.06c1.04-1.04,2.28-1.56,3.71-1.56s2.66.52,3.69,1.56c1.04,1.03,1.56,2.26,1.56,3.69s-.52,2.67-1.56,3.71c-1.03,1.03-2.26,1.54-3.69,1.54s-2.67-.51-3.71-1.54c-1.03-1.04-1.54-2.28-1.54-3.71s.51-2.66,1.54-3.69Zm-.83,14.27v25.65h8.85v-25.65h-8.85Z" />
+              <path class="cls-1"
+                d="m203.98,31.38h-18.58c0,1.81.58,3.15,1.75,4.02,1.17.86,2.43,1.29,3.79,1.29s2.56-.19,3.4-.56c.83-.39,1.78-1.15,2.85-2.29l6.4,3.21c-2.67,4.46-7.1,6.69-13.29,6.69-3.88,0-7.2-1.32-9.96-3.96-2.77-2.65-4.15-5.84-4.15-9.58s1.38-6.94,4.15-9.6c2.76-2.67,6.08-4,9.96-4s7.35,1.18,9.9,3.54c2.55,2.35,3.83,5.7,3.83,10.06,0,.6-.02.99-.04,1.19Zm-18.33-4.9h9.73c-.2-1.33-.72-2.35-1.56-3.06-.85-.72-1.94-1.08-3.27-1.08-1.47,0-2.65.39-3.52,1.17-.86.77-1.32,1.76-1.38,2.98Z" />
+              <path class="cls-1"
+                d="m208.18,42.98v-25.65h8.85v3.71h.08c.07-.14.18-.3.33-.5.15-.21.48-.56.98-1.06s1.03-.94,1.58-1.33c.57-.4,1.3-.76,2.21-1.08.9-.32,1.82-.48,2.75-.48s1.92.14,2.85.42c.93.27,1.61.53,2.04.79l.71.4-3.71,7.5c-1.1-.93-2.64-1.4-4.6-1.4-1.06,0-1.97.24-2.75.71-.77.46-1.31,1.02-1.63,1.69-.31.67-.53,1.24-.67,1.71-.13.46-.19.82-.19,1.08v13.5h-8.85Z" />
+              <path class="cls-1"
+                d="m261.89,1c2.23,0,4.42.33,6.54.98,2.14.64,3.72,1.28,4.75,1.92l1.5,1-3.79,7.5c-.31-.21-.72-.46-1.25-.77-.53-.32-1.53-.74-3-1.27-1.46-.54-2.83-.81-4.1-.81-1.56,0-2.77.33-3.63,1-.85.67-1.27,1.57-1.27,2.71,0,.56.2,1.08.6,1.56.4.49,1.08,1.01,2.04,1.56.97.54,1.82.98,2.56,1.31.73.33,1.86.83,3.4,1.5,2.67,1.14,4.94,2.68,6.81,4.63,1.89,1.95,2.83,4.16,2.83,6.63s-.43,4.43-1.27,6.19c-.85,1.77-2.02,3.15-3.5,4.15-1.49,1-3.14,1.74-4.94,2.23-1.79.48-3.74.73-5.83.73-1.81,0-3.58-.19-5.31-.56-1.72-.36-3.17-.81-4.33-1.35-1.17-.55-2.22-1.09-3.15-1.63-.93-.54-1.62-.99-2.06-1.35l-.65-.56,4.71-7.9c.39.33.93.77,1.63,1.29.71.52,1.95,1.21,3.73,2.08,1.79.86,3.36,1.29,4.73,1.29,3.97,0,5.96-1.35,5.96-4.06,0-.57-.15-1.09-.44-1.56-.28-.48-.78-.97-1.5-1.46-.71-.48-1.34-.86-1.9-1.15-.54-.28-1.44-.71-2.69-1.29s-2.18-1.03-2.77-1.33c-2.5-1.23-4.44-2.78-5.81-4.63-1.36-1.84-2.04-3.84-2.04-5.98,0-3.69,1.36-6.71,4.08-9.06,2.73-2.34,5.85-3.52,9.35-3.52Z" />
+              <path class="cls-1"
+                d="m281.78,17.33V7.79h8.85v9.54h5.4v6.75h-5.4v8.15c0,2.38.66,3.56,1.98,3.56.33,0,.68-.07,1.04-.21.38-.14.67-.27.88-.4l.29-.21,2.21,7.15c-1.91,1.07-4.07,1.6-6.5,1.6-1.67,0-3.1-.29-4.31-.88-1.2-.58-2.1-1.36-2.73-2.35-.61-.98-1.05-2.01-1.31-3.08-.27-1.08-.4-2.24-.4-3.48v-9.85h-3.71v-6.75h3.71Z" />
+              <path class="cls-1"
+                d="m308.37,17.33v12.21c0,2.53.38,4.33,1.15,5.4.76,1.07,2.06,1.6,3.9,1.6s3.13-.53,3.9-1.6c.76-1.07,1.15-2.86,1.15-5.4v-12.21h8.85v14.35c0,4.27-1.11,7.34-3.33,9.23-2.21,1.88-5.73,2.81-10.56,2.81s-8.36-.94-10.58-2.81c-2.21-1.89-3.31-4.96-3.31-9.23v-14.35h8.85Z" />
+              <path class="cls-1"
+                d="m334.55,39.81c-2.41-2.63-3.6-5.83-3.6-9.63s1.2-7.02,3.6-9.65c2.4-2.64,5.45-3.96,9.15-3.96,3.4,0,6.2,1.07,8.4,3.21V0h8.85v42.98h-8.75v-2.9h-.1c-2.2,2.43-4.99,3.65-8.4,3.65-3.7,0-6.74-1.3-9.15-3.92Zm7.52-13.96c-1.16,1.13-1.73,2.57-1.73,4.33s.55,3.21,1.65,4.33c1.11,1.11,2.56,1.67,4.35,1.67s3.16-.56,4.27-1.69c1.13-1.14,1.69-2.57,1.69-4.31s-.58-3.21-1.73-4.33c-1.16-1.14-2.56-1.71-4.23-1.71s-3.12.57-4.27,1.71Z" />
+              <path class="cls-1"
+                d="m367.76,3.06c1.04-1.04,2.28-1.56,3.71-1.56s2.66.52,3.69,1.56c1.04,1.03,1.56,2.26,1.56,3.69s-.52,2.67-1.56,3.71c-1.03,1.03-2.26,1.54-3.69,1.54s-2.67-.51-3.71-1.54c-1.03-1.04-1.54-2.28-1.54-3.71s.51-2.66,1.54-3.69Zm-.83,14.27v25.65h8.85v-25.65h-8.85Z" />
+              <path class="cls-1"
+                d="m384.43,39.94c-2.85-2.54-4.27-5.79-4.27-9.75s1.48-7.23,4.44-9.77c2.97-2.55,6.64-3.83,11-3.83s7.93,1.29,10.88,3.85c2.96,2.57,4.44,5.82,4.44,9.75s-1.45,7.18-4.33,9.73c-2.88,2.54-6.54,3.81-10.98,3.81s-8.32-1.26-11.17-3.79Zm6.85-14.08c-1.16,1.13-1.73,2.57-1.73,4.33s.55,3.21,1.65,4.33c1.11,1.11,2.56,1.67,4.35,1.67s3.16-.56,4.27-1.69c1.13-1.14,1.69-2.57,1.69-4.31s-.58-3.21-1.73-4.33c-1.16-1.14-2.56-1.71-4.23-1.71s-3.12.57-4.27,1.71Z" />
+              <path class="cls-1"
+                d="m426.19,16.58c1.46,0,2.9.17,4.33.5,1.44.33,2.51.67,3.21,1l1.06.5-2.92,5.81c-2-1.07-3.9-1.6-5.69-1.6-1,0-1.71.11-2.13.33-.42.21-.63.61-.63,1.21,0,.14.01.28.04.42.04.13.11.25.21.38.09.11.19.21.27.29s.22.18.42.27c.21.1.36.18.48.23.13.04.32.12.58.23.26.1.46.18.58.23.14.04.36.11.69.21.32.1.56.17.73.21,1.03.29,1.92.63,2.69,1,.78.36,1.59.86,2.44,1.5.84.63,1.5,1.43,1.96,2.4.47.96.71,2.06.71,3.29,0,5.83-4.05,8.75-12.15,8.75-1.83,0-3.58-.29-5.23-.85-1.64-.57-2.83-1.13-3.56-1.69l-1.1-.92,3.6-6.04c.26.24.61.52,1.04.83.43.32,1.21.76,2.35,1.31,1.14.54,2.13.81,2.96.81,1.83,0,2.75-.61,2.75-1.85,0-.57-.24-1.01-.71-1.31-.47-.32-1.27-.68-2.38-1.08-1.11-.4-1.99-.77-2.63-1.1-1.6-.83-2.86-1.77-3.79-2.81-.93-1.05-1.4-2.45-1.4-4.19,0-2.59,1.01-4.61,3.02-6.06,2.01-1.46,4.73-2.19,8.17-2.19Z" />
+            </g>
+          </g>
+        </svg></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="collapse navbar-collapse align-content-stretch" id="navbarNavAltMarkup">
+      <div class="navbar-nav flex-row justify-content-center flex-wrap flex-md-nowrap">
+        <a class="nav-link subheading-font link-hover active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link subheading-font link-hover" href="services.html">Services</a>
+        <a class="nav-link subheading-font link-hover" href="about.html">About</a>
+        <a class="nav-link subheading-font link-hover" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Hero -->
+  <section>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth',
-            'database',
-            'firestore',
-            'functions',
-            'messaging',
-            'storage',
-            'analytics',
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>

@@ -1,11 +1,6 @@
 {
   "hosting": {
     "public": "hosting",
-    "site": "gauthierstudiosstagging",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "site": "gauthierstudiosstagging"
   }
 }

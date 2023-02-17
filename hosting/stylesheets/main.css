@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "glacial indifference";
+    src: url('/hosting/font/glacial-indifference/GlacialIndifference-Regular.otf');
+}
+
+
+
+:root {
+    --main-color: #49A84E;
+    --secondary-color: #073643;
+}
+
+
+/* Utility Classes */
+.tight-wrapper {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Main Heading Font & Weight */
+.heading-font {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+/* Sub Heading Font & Weight */
+.subheading-font {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+/* Link over text properties for uniform */
+.link-hover {
+    /* border-bottom: 4px white solid; */
+    padding: 0px;
+    font-size: 1.5em;
+}
+/* Link over text properties for uniform */
+.link-hover:hover {
+    color:var(--main-color);
+    border-bottom: 4px var(--main-color) solid;
+}
+
+.nav-link {
+    margin-left: 1em;
+}
+
