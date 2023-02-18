@@ -2,8 +2,7 @@
   "hosting": {
     "public": "hosting",
     "site": "gauthierstudiosstagging",
-    "ignore": [
-      "firebase.json"
-    ]
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
