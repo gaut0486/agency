@@ -35,6 +35,9 @@
     font-size: 4.5em;
 }
 
+.medium-text {
+    font-size: 2em;
+}
 /* Link over text properties for uniform */
 .link-hover {
     /* border-bottom: 4px white solid; */
@@ -70,9 +73,10 @@ a {
 header {
     background-color: #073643cf;
     z-index: 1001;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+    padding: 1em 0;
 }
 
 nav {
@@ -109,16 +113,43 @@ nav {
     border-bottom: 2px solid var(--primary-color);
 }
 
+
+
+
+
 .hero {
-    height: 100vh;
-    padding: 0;
-}
-
-
-.hero div {
-    z-index: 2;
+    /* height: 100vh; */
+    padding-top: 10px;
+    margin: 0;
 }
 
 .hero img {
-    border-radius: 0 0 0px 80px;s
+    border-radius: 0;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin: 3em auto;
+}
+.hero div * {
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+
+/* Screen break for hero section @ medium */
+@media screen and (min-width: 770px) {
+    .hero {
+        /* height: 100vh; */
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .hero img {
+        border-radius: 0 0 0px 80px;
+    }
+
 }
